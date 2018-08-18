@@ -553,8 +553,8 @@ hr {
 }
 
 /* Smartphones Portrait */
-@media only screen 
-  and (min-device-width: 320px) 
+@media only screen
+  and (min-device-width: 320px)
   and (max-device-width: 480px)
   and (-webkit-min-device-pixel-ratio: 2)
   and (orientation: portrait) {
@@ -614,7 +614,9 @@ hr {
     .brands__BE,
     .brands__KORE,
     .brands__LJ,
-    .brands__SNOO {
+    .brands__SNOO,
+    .brands__JOG
+    {
         background: #E2B713 !important;
     }
 
@@ -675,10 +677,10 @@ hr {
 }
 
 /* Tablet portrait */
-@media only screen 
-  and (min-device-width: 768px) 
-  and (max-device-width: 1024px) 
-  and (orientation: portrait) 
+@media only screen
+  and (min-device-width: 768px)
+  and (max-device-width: 1024px)
+  and (orientation: portrait)
   and (-webkit-min-device-pixel-ratio: 2) {
     header {
         justify-content: center;
