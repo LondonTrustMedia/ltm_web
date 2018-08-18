@@ -322,6 +322,9 @@ hr {
 .brands__FNO .brands__logo {
     background-image: url(/assets/brands/freenode.svg);
 }
+.brands__USER .brands__logo {
+    background-image: url(/assets/brands/ul.png);
+}
 
 .brands__JOG .brands__logo {
     background-image: url(/assets/brands/jog.png);
@@ -346,6 +349,18 @@ hr {
 
 .brands__SNOO .brands__logo {
     background-image: url(/assets/brands/snoonet.svg);
+}
+
+.brands__SNOO .brands__logo {
+    background-image: url(/assets/brands/snoonet.svg);
+}
+
+.brands__NWJS .brands__logo {
+    background-image: url(/assets/brands/nwjs.png);
+}
+
+.brands__LFA .brands__logo {
+    background-image: url(/assets/brands/lfa.png);;
 }
 
 .content {
@@ -585,6 +600,7 @@ hr {
         height: 75vh;
         background-position: center center;
     }
+ 
 
     .ua-safari .tagline__image {
         height: 65vh;
@@ -615,7 +631,8 @@ hr {
     .brands__KORE,
     .brands__LJ,
     .brands__SNOO,
-    .brands__JOG
+    .brands__JOG,
+    .brands__NWJS
     {
         background: #E2B713 !important;
     }
@@ -623,7 +640,9 @@ hr {
     .brands__BE a,
     .brands__KORE a,
     .brands__LJ a,
-    .brands__SNOO a {
+    .brands__SNOO a,
+    .brands__JOG a,
+    .brands__NWJS a {
         color: #E7E2EA;
     }
 
@@ -712,6 +731,7 @@ hr {
 
     .tagline__image h2 {
         text-align: center;
+        white-space:nowrap;
         width: 100%;
     }
 
@@ -743,14 +763,18 @@ hr {
     .brands__BE,
     .brands__KORE,
     .brands__LJ,
-    .brands__SNOO {
+    .brands__SNOO,
+    .brands__NWJS,
+    .brands__JOG {
         background: #E2B713 !important;
     }
 
     .brands__BE a,
     .brands__KORE a,
     .brands__LJ a,
-    .brands__SNOO a {
+    .brands__SNOO a,
+    .brands__NWJS a,
+    .brands__JOG a {
         color: #E7E2EA;
     }
 }
