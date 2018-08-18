@@ -76,6 +76,8 @@
 
   <section class="brands">
     <div class="brands__inner">
+      <div id="right_arrow"></div>
+      <div id="left_arrow"></div>
       <ul class="brands__list">
 
         <li class="brands__listItem brands__PIA">
@@ -232,5 +234,29 @@
       </ul>
     </div>
   </section>
+<script>
+window.onload = (function() {
+  var scroll_menu = document.getElementsByClassName('brands__inner')[0]
+  scroll_menu.onscroll = scrollEvent
+
+  function scrollEvent() {
+    var scrollVisible = scroll_menu.scrollWidth - scroll_menu.offsetWidth
+    var scrollPos = scroll_menu.scrollLeft
+
+    /* Right Arrow */
+    if(scrollPos < scrollVisible)
+      document.getElementById("right_arrow").style.display="block"
+    else
+      document.getElementById("right_arrow").style.display="none"
+
+    /* Left Arrow */
+    if(scrollPos > 0)
+      document.getElementById("left_arrow").style.display="block"
+    else
+      document.getElementById("left_arrow").style.display="none"
+  }
+  scrollEvent()
+})
+</script>
 </body>
 </html>
