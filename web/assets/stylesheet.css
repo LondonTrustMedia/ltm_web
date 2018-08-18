@@ -569,6 +569,62 @@ hr {
     transform: none;
 }
 
+/* Smartphones Landscape */
+@media only screen 
+  and (min-device-width : 375px) 
+  and (max-device-width : 812px) 
+  and (-webkit-device-pixel-ratio : 3)
+  and (orientation: landscape) {
+    header {
+        justify-content: center;
+        margin-top: 5vh;
+    }
+
+    .header__nav {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+  .tagline {
+        height: auto;
+    }
+
+    .tagline__wrapper {
+        margin-top: 5em;
+        flex-direction: row-reverse;
+    }
+
+    .tagline__image {
+        order: -1;
+        height: 100vh;
+        background-position: center top;
+    }
+ 
+
+    .ua-safari .tagline__image {
+        height: 65vh;
+    }
+    .tagline__image h2 {
+       white-space:nowrap;
+       font-size:2em;
+    }
+
+    .tagline__text {
+        margin-top: 10vh;
+        text-align: left;
+      display:block;
+    }
+
+    .brands {
+        position: relative;
+    }
+
+
+}
+
 /* Smartphones Portrait */
 @media only screen
   and (min-device-width: 320px)
