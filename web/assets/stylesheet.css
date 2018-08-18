@@ -333,7 +333,9 @@ hr {
 .brands__KORE .brands__logo {
     background-image: url(/assets/brands/kore.png);
 }
-
+.brands__IRC .brands__logo {
+    background-image: url(/assets/brands/irc.png);
+}
 .brands__LJ .brands__logo {
     background-image: url(/assets/brands/lj.png);
 }
