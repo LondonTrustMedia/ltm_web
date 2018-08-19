@@ -231,7 +231,6 @@ hr {
     background: #000;
     width: 100%;
 }
-
 .brands__inner {
     padding: 0;
     /* ADDED */
@@ -248,7 +247,8 @@ hr {
 }
 
 .brands__listItem {
-    min-width: 13em;
+    min-width: 6.5em;
+    flex-basis:auto;
     padding: 2em;
     display: flex;
     flex-direction: column;
