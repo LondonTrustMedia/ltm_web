@@ -23,8 +23,6 @@ $ npm run build
 
 The new build can be then found in the `dist` directory.
 
-The HTML/CSS has been built following the [BEM](http://getbem.com/introduction/) methodology.
-
 ### Production
 
 For production deployment, we have a simple taskr build that:
@@ -42,3 +40,4 @@ $ npm run build
 
 - The fonts are inlined in the CSS to avoid the Flash of Unstyled Text (FOUT)
 - When adding new images, remember to optimize them (svg: `svgo`, png: `pngquant`, jpg: `jpegoptim`)
+- The HTML/CSS has been built following the [BEM](http://getbem.com/introduction/) methodology
