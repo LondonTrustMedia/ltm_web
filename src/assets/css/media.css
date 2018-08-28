@@ -1,0 +1,435 @@
+@custom-media --smartphone-landscape only screen 
+  and (min-device-width : 375px) 
+  and (max-device-width : 812px) 
+  and (-webkit-device-pixel-ratio : 3)
+  and (orientation: landscape);
+  
+@custom-media --smartphone-portrait only screen
+  and (min-device-width: 320px)
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait);
+
+@custom-media --firefox-mobile-landscape only screen 
+  and (min-device-width : 375px) 
+  and (max-device-width : 812px)
+  and (orientation: landscape);
+
+@custom-media --firefox-mobile-portrait only screen
+  and (min-device-width: 320px)
+  and (max-device-width: 480px)
+  and (orientation: portrait);
+
+@custom-media --tablet-portrait only screen
+  and (min-device-width: 768px)
+  and (max-device-width: 1024px)
+  and (orientation: portrait)
+  and (-webkit-min-device-pixel-ratio: 2);
+
+/* Smartphones Landscape */
+@media (--smartphone-landscape) {
+    header {
+        justify-content: center;
+        margin-top: 5vh;
+    }
+
+    .header__nav {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .tagline {
+        height: auto;
+    }
+
+    .tagline__wrapper {
+        margin-top: 5em;
+        flex-direction: row-reverse;
+    }
+
+    .tagline__image {
+        order: -1;
+        height: 100vh;
+        background-position: center top;
+    }
+ 
+    .ua-safari .tagline__image {
+        height: 65vh;
+    }
+
+    .tagline__image h2 {
+       white-space:nowrap;
+       font-size:2em;
+    }
+
+    .tagline__text {
+        margin-top: 10vh;
+        text-align: left;
+      display:block;
+    }
+
+    .brands {
+        position: relative;
+    }
+
+}
+
+/* Smartphones Portrait */
+@media (--smartphone-portrait) {
+    header {
+        justify-content: center;
+        margin-top: 5vh;
+    }
+
+    .header__nav {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .tagline {
+        height: auto;
+    }
+
+    .tagline__wrapper {
+        margin-top: 5em;
+        flex-direction: column;
+    }
+
+    .tagline__image {
+        order: -1;
+        height: 75vh;
+        background-position: center center;
+    }
+
+    .ua-safari .tagline__image {
+        height: 65vh;
+    }
+
+    .tagline__text {
+        margin-top: 10vh;
+        text-align: center;
+    }
+
+    .brands {
+        position: relative;
+    }
+
+    .brands__list {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .brands__listItem {
+        width: 46vw;
+        min-width: auto;
+        padding-left: 2vw;
+        padding-right: 2vw;
+    }
+
+    .brands__BE,
+    .brands__KORE,
+    .brands__LJ,
+    .brands__SNOO,
+    .brands__JOG,
+    .brands__NWJS
+    {
+        background: #E2B713 !important;
+    }
+
+    .brands__BE a,
+    .brands__KORE a,
+    .brands__LJ a,
+    .brands__SNOO a,
+    .brands__JOG a,
+    .brands__NWJS a {
+        color: #E7E2EA;
+    }
+
+    /* list content */
+    .content {
+        margin: 10vh auto;
+    }
+
+    .content__h1 {
+        border: 0;
+    }
+
+    .list__inner {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .list__logo {
+        margin-bottom: 5vh;
+    }
+
+    .list__desc {
+        margin: 0;
+    }
+
+    /* about */
+    .user__list li {
+        width: 100%;
+    }
+}
+
+/* Firefox mobile landscape */
+@media (--firefox-mobile-landscape) {
+    header {
+        justify-content: center;
+        margin-top: 5vh;
+    }
+
+    .header__nav {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .tagline {
+        height: auto;
+    }
+
+    .tagline__wrapper {
+        margin-top: 5em;
+        flex-direction: row-reverse;
+    }
+
+    .tagline__image {
+        order: -1;
+        height: 100vh;
+        background-position: center top;
+    }
+ 
+    .ua-safari .tagline__image {
+        height: 65vh;
+    }
+
+    .tagline__image h2 {
+       white-space:nowrap;
+       font-size:2em;
+    }
+
+    .tagline__text {
+        margin-top: 10vh;
+        text-align: left;
+      display:block;
+    }
+
+    .brands {
+        position: relative;
+    }
+
+}
+
+/* Firefox Mobile Portrait */
+@media (--firefox-mobile-portrait) {
+    header {
+        justify-content: center;
+        margin-top: 5vh;
+    }
+
+    .header__nav {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .tagline {
+        height: auto;
+    }
+
+    .tagline__wrapper {
+        margin-top: 5em;
+        flex-direction: column;
+    }
+
+    .tagline__image {
+        order: -1;
+        height: 75vh;
+        background-position: center center;
+    }
+ 
+
+    .ua-safari .tagline__image {
+        height: 65vh;
+    }
+
+    .tagline__text {
+        margin-top: 10vh;
+        text-align: center;
+    }
+
+    .brands {
+        position: relative;
+    }
+
+    .brands__list {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .brands__listItem {
+        width: 46vw;
+        min-width: auto;
+        padding-left: 2vw;
+        padding-right: 2vw;
+    }
+
+    .brands__BE,
+    .brands__KORE,
+    .brands__LJ,
+    .brands__SNOO,
+    .brands__JOG,
+    .brands__NWJS
+    {
+        background: #E2B713 !important;
+    }
+
+    .brands__BE a,
+    .brands__KORE a,
+    .brands__LJ a,
+    .brands__SNOO a,
+    .brands__JOG a,
+    .brands__NWJS a {
+        color: #E7E2EA;
+    }
+
+    /* list content */
+    .content {
+        margin: 10vh auto;
+    }
+
+    .content__h1 {
+        border: 0;
+    }
+
+    .list__inner {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .list__logo {
+        margin-bottom: 5vh;
+    }
+
+    .list__desc {
+        margin: 0;
+    }
+
+    /* about */
+    .user__list li {
+        width: 100%;
+    }
+}
+
+@media only screen
+    and (min-device-width: 320px)
+    and (max-device-width: 568px)
+    and (-webkit-device-pixel-ratio: 2)
+    and (device-aspect-ratio: 40/71)
+    and (orientation: portrait) {
+    .tagline__image h2 {
+        text-align: center;
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 50px;
+        line-height: 60px;
+    }
+
+    h2 {
+        font-size: 30px;
+    }
+}
+
+/* Tablet portrait */
+@media (--tablet-portrait) {
+    header {
+        justify-content: center;
+        margin-top: 5vh;
+    }
+
+    .header__nav {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .tagline {
+        height: auto;
+    }
+
+    .tagline__wrapper {
+        margin-top: 5em;
+        flex-direction: column;
+    }
+
+    .tagline__image {
+        order: -1;
+        height: 75vh;
+        background-position: center center;
+    }
+
+    .tagline__image h2 {
+        text-align: center;
+        white-space:nowrap;
+        width: 100%;
+    }
+
+    .ua-safari .tagline__image {
+        height: 65vh;
+    }
+
+    .tagline__text {
+        margin-top: 10vh;
+        text-align: center;
+    }
+
+    .brands {
+        position: relative;
+    }
+
+    .brands__list {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .brands__listItem {
+        width: 46vw;
+        min-width: auto;
+        padding-left: 2vw;
+        padding-right: 2vw;
+    }
+
+    .brands__BE,
+    .brands__KORE,
+    .brands__LJ,
+    .brands__SNOO,
+    .brands__NWJS,
+    .brands__JOG {
+        background: #E2B713 !important;
+    }
+
+    .brands__BE a,
+    .brands__KORE a,
+    .brands__LJ a,
+    .brands__SNOO a,
+    .brands__NWJS a,
+    .brands__JOG a {
+        color: #E7E2EA;
+    }
+}
