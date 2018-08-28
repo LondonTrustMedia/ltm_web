@@ -238,6 +238,29 @@ hr {
     white-space: nowrap;
 }
 
+.brands__arrowRight {
+    background: url("/assets/right-arrow-yellow.svg") no-repeat;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 0.5;
+    pointer-events: none;
+}
+.brands__arrowLeft {
+    background: url("/assets/right-arrow-yellow.svg") no-repeat;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%) scaleX(-1);
+    opacity: 0.5;
+    pointer-events: none;
+}
+
 .brands__list {
     display: flex;
     flex-direction: row;
@@ -314,6 +337,7 @@ hr {
     background-repeat: no-repeat;
     background-position: center center;
     background-size: contain;
+    margin-bottom: 0;
 }
 
 .brands__BE .brands__logo {
@@ -381,6 +405,11 @@ hr {
     background: #100e0e;
     position: relative;
     bottom: -5px;
+}
+
+.content__h2 {
+    margin: 2.5em 0;
+    line-height: 1.2em;
 }
 
 .line__bottom {
@@ -568,30 +597,6 @@ hr {
 
 #menuToggle input:checked ~ ul {
     transform: none;
-}
-
-/* Arrow for scroller */
-#right_arrow {
-  background:url("/assets/right-arrow-yellow.svg") no-repeat;
-  position:absolute;
-  width:50px;
-  height:50px;
-  right:0;
-  top:50%;
-  transform: translateY(-50%);
-  opacity:0.5;
-  pointer-events:none;
-}
-#left_arrow {
-  background:url("/assets/right-arrow-yellow.svg") no-repeat;
-  position:absolute;
-  width:50px;
-  height:50px;
-  left:0;
-  top: 50%;
-  transform: translateY(-50%) scaleX(-1);
-  opacity:0.5;
-  pointer-events:none;
 }
 
 @import "media.css";

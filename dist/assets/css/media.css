@@ -1,33 +1,9 @@
-@custom-media --smartphone-landscape only screen 
-  and (min-device-width : 375px) 
-  and (max-device-width : 812px) 
-  and (-webkit-device-pixel-ratio : 3)
-  and (orientation: landscape);
-  
-@custom-media --smartphone-portrait only screen
-  and (min-device-width: 320px)
-  and (max-device-width: 480px)
-  and (-webkit-min-device-pixel-ratio: 2)
-  and (orientation: portrait);
-
-@custom-media --firefox-mobile-landscape only screen 
-  and (min-device-width : 375px) 
-  and (max-device-width : 812px)
-  and (orientation: landscape);
-
-@custom-media --firefox-mobile-portrait only screen
-  and (min-device-width: 320px)
-  and (max-device-width: 480px)
-  and (orientation: portrait);
-
-@custom-media --tablet-portrait only screen
-  and (min-device-width: 768px)
-  and (max-device-width: 1024px)
-  and (orientation: portrait)
-  and (-webkit-min-device-pixel-ratio: 2);
-
 /* Smartphones Landscape */
-@media (--smartphone-landscape) {
+@media only screen 
+and (min-device-width : 375px) 
+and (max-device-width : 812px) 
+and (-webkit-device-pixel-ratio : 3)
+and (orientation: landscape) {
     header {
         justify-content: center;
         margin-top: 5vh;
@@ -78,7 +54,11 @@
 }
 
 /* Smartphones Portrait */
-@media (--smartphone-portrait) {
+@media only screen
+and (min-device-width: 320px)
+and (max-device-width: 480px)
+and (-webkit-min-device-pixel-ratio: 2)
+and (orientation: portrait) {
     header {
         justify-content: center;
         margin-top: 5vh;
@@ -180,7 +160,10 @@
 }
 
 /* Firefox mobile landscape */
-@media (--firefox-mobile-landscape) {
+@media only screen 
+and (min-device-width : 375px) 
+and (max-device-width : 812px)
+and (orientation: landscape) {
     header {
         justify-content: center;
         margin-top: 5vh;
@@ -231,7 +214,10 @@
 }
 
 /* Firefox Mobile Portrait */
-@media (--firefox-mobile-portrait) {
+@media only screen
+and (min-device-width: 320px)
+and (max-device-width: 480px)
+and (orientation: portrait) {
     header {
         justify-content: center;
         margin-top: 5vh;
@@ -333,6 +319,7 @@
     }
 }
 
+/* iPhone 5 */
 @media only screen
     and (min-device-width: 320px)
     and (max-device-width: 568px)
@@ -355,7 +342,11 @@
 }
 
 /* Tablet portrait */
-@media (--tablet-portrait) {
+@media only screen
+and (min-device-width: 768px)
+and (max-device-width: 1024px)
+and (orientation: portrait)
+and (-webkit-min-device-pixel-ratio: 2) {
     header {
         justify-content: center;
         margin-top: 5vh;
