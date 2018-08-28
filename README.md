@@ -23,6 +23,8 @@ $ npm run build
 
 The new build can be then found in the `dist` directory.
 
+The HTML/CSS has been built following the [BEM](http://getbem.com/introduction/) methodology.
+
 ### Production
 
 For production deployment, we have a simple taskr build that:
