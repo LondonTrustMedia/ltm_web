@@ -1,7 +1,6 @@
 export default async function (task) {
   // Post-process the CSS files
   // - autoprefixer takes care of adding prefixes so that we can keep our CSS source clean
-  // - postcss-custom-media adds some readability to our media sources
   // - cssnano minifies the output
   await task.source('src/assets/css/*.css')
     .clear('dist')
@@ -11,7 +10,6 @@ export default async function (task) {
         require('autoprefixer')({
           browsers: ['last 2 versions']
         }),
-        require('postcss-custom-media'),
         require('cssnano')
       ]
     })
