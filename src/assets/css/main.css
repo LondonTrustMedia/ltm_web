@@ -383,6 +383,11 @@ hr {
     bottom: -5px;
 }
 
+.content__h2 {
+    margin: 2.5em 0;
+    line-height: 1.2em;
+}
+
 .line__bottom {
     display: inline-block;
     width: 80%;
