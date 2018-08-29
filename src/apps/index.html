@@ -33,6 +33,31 @@
 </head>
 
 <body>
+  <div class="modal__overlay modal__overlay--closed"></div>
+
+  <div class="modal modal--closed">
+    <div class="modal__header">
+      <h3>Logo</h3>
+    </div>
+    <div class="modal__logo modal__logoWhite">
+      <img src="/assets/logo/logo-white.svg" alt="LTMH" />
+      <div class="modal__icons">
+        <a href="/assets/logo/logo-white.svg" target="_blank">SVG</a>
+        <a href="/assets/logo/logo-white.png" target="_blank">PNG</a>
+      </div>
+    </div>
+    <div class="modal__logo modal__logoBlack">
+      <img src="/assets/logo/logo-black.svg" alt="LTMH" />
+      <div class="modal__icons">
+        <a href="/assets/logo/logo-black.svg" target="_blank">SVG</a>
+        <a href="/assets/logo/logo-black.png" target="_blank">PNG</a>
+      </div>
+    </div>
+    <div class="modal__footer">
+        <button class="button modal__close">Close</button>
+    </div>
+  </div>
+  
   <nav class="hamburger" role="navigation">
     <div id="menuToggle">
       <input type="checkbox" />
@@ -141,6 +166,27 @@
     </div>
   </main>
   <footer>© Copyright 2018 London Trust Media Holdings</footer>
-</body>
+  <script>
+  (function() {
+    var modal = document.querySelector('.modal');
+    var modalOverlay = document.querySelector('.modal__overlay');
+    var closeButton = document.querySelector('.modal__close');
+    var trigger = document.querySelector('.header__logo');
 
+    closeButton.addEventListener('click', function() {
+      modal.classList.toggle('modal--closed');
+      modal.classList.toggle('modal--opened');
+      modalOverlay.classList.toggle('modal__overlay--closed');
+    });
+
+    trigger.addEventListener('contextmenu', function(e) {
+      e.preventDefault();
+      modal.classList.toggle('modal--closed');
+      modal.classList.toggle('modal--opened');
+      modalOverlay.classList.toggle('modal__overlay--closed');
+      return false;
+    }, false);
+  })();
+  </script>
+</body>
 </html>
