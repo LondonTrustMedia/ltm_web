@@ -3,8 +3,8 @@
 
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <link href="assets/css/main.css" rel="stylesheet" media="screen">
-  <link href="assets/css/media.css" rel="stylesheet" media="screen">
+  <link href="/assets/css/main.css" rel="stylesheet" media="screen">
+  <link href="/assets/css/media.css" rel="stylesheet" media="screen">
   <title>london trust media holdings - power to the people</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
 
@@ -36,6 +36,31 @@
 </head>
 
 <body class="bg">
+  <div class="modal__overlay modal__overlay--closed"></div>
+
+  <div class="modal modal--closed">
+    <div class="modal__header">
+      <h3>Logo</h3>
+    </div>
+    <div class="modal__logo modal__logoWhite">
+      <img src="/assets/logo/logo-white.svg" alt="LTMH" />
+      <div class="modal__icons">
+        <a href="/assets/logo/logo-white.svg" target="_blank">SVG</a>
+        <a href="/assets/logo/logo-white.png" target="_blank">PNG</a>
+      </div>
+    </div>
+    <div class="modal__logo modal__logoBlack">
+      <img src="/assets/logo/logo-black.svg" alt="LTMH" />
+      <div class="modal__icons">
+        <a href="/assets/logo/logo-black.svg" target="_blank">SVG</a>
+        <a href="/assets/logo/logo-black.png" target="_blank">PNG</a>
+      </div>
+    </div>
+    <div class="modal__footer">
+        <button class="button modal__close">Close</button>
+    </div>
+  </div>
+
   <nav class="hamburger" role="navigation">
     <div id="menuToggle">
       <input type="checkbox" />
@@ -174,24 +199,43 @@
       </ul>
     </div>
   </section>
-<script>
-(function() {
-  var scroll_menu = document.querySelector('.brands__inner');
-  scroll_menu.onscroll = scrollEvent;
-  window.onresize = scrollEvent;
+  <script>
+  (function() {
+    var scroll_menu = document.querySelector('.brands__inner');
+    scroll_menu.onscroll = scrollEvent;
+    window.onresize = scrollEvent;
 
-  function scrollEvent() {
-    var scrollVisible = scroll_menu.scrollWidth - scroll_menu.offsetWidth;
-    var scrollPos = scroll_menu.scrollLeft;
+    function scrollEvent() {
+      var scrollVisible = scroll_menu.scrollWidth - scroll_menu.offsetWidth;
+      var scrollPos = scroll_menu.scrollLeft;
 
-    var arrowLeft = document.querySelector('.brands__arrowLeft');
-    var arrowRight = document.querySelector('.brands__arrowRight');
+      var arrowLeft = document.querySelector('.brands__arrowLeft');
+      var arrowRight = document.querySelector('.brands__arrowRight');
 
-    arrowLeft.style.display = scrollPos > 0 ? 'block' : 'none';
-    arrowRight.style.display = scrollPos < scrollVisible ? 'block' : 'none';
-  }
-  scrollEvent()
-})();
-</script>
+      arrowLeft.style.display = scrollPos > 0 ? 'block' : 'none';
+      arrowRight.style.display = scrollPos < scrollVisible ? 'block' : 'none';
+    }
+    scrollEvent()
+
+    var modal = document.querySelector('.modal');
+    var modalOverlay = document.querySelector('.modal__overlay');
+    var closeButton = document.querySelector('.modal__close');
+    var trigger = document.querySelector('.header__logo');
+
+    closeButton.addEventListener('click', function() {
+      modal.classList.toggle('modal--closed');
+      modal.classList.toggle('modal--opened');
+      modalOverlay.classList.toggle('modal__overlay--closed');
+    });
+
+    trigger.addEventListener('contextmenu', function(e) {
+      e.preventDefault();
+      modal.classList.toggle('modal--closed');
+      modal.classList.toggle('modal--opened');
+      modalOverlay.classList.toggle('modal__overlay--closed');
+      return false;
+    }, false);
+  })();
+  </script>
 </body>
 </html>
