@@ -598,3 +598,19 @@ hr {
 #menuToggle input:checked ~ ul {
     transform: none;
 }
+
+.content__preamble, .content__manifesto, .content__privacy_cta {
+	font-size: 26px;
+	font-weight: 600;
+	line-height: 42px;
+	margin-bottom: 2em;
+}
+
+.content__preamble ul li, .content__manifesto ul li {
+	list-style: decimal;
+	margin-left: 60px;
+}
+
+.content__manifesto__nested_list li {
+	list-style: disc !important;
+}
