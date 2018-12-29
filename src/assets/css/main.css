@@ -614,3 +614,7 @@ hr {
 .content__manifesto__nested_list li {
 	list-style: disc !important;
 }
+
+#coral_talk_stream {
+	background: #ddd;
+}
